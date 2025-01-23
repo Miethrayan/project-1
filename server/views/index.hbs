@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+        User Login
+        </div>
+        {{#if msg}}
+        <p class="{{msg_type}}">{{msg}}</p>
+        {{/if}}
+        <form action ="/auth/login" method="post">
+            <div class="data">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="data">
+              <label for="password">password</label>
+              <input type="password" name="password" id="password">
+            </div>
+            <div class="forgot-pswd">
+                <a href="">Forgot Password</a>
+            </div>
+            <div class="btn">
+                <button type="submit">Login</button>
+            </div> 
+            <div class="signUp-link">
+                Not a member? <a href="./register-form">SignUp</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
