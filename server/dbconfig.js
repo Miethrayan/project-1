@@ -1,7 +1,7 @@
 const dbConfig = {
     host:"localhost",
     user:"root",
-    password : "MIETHrayan123$",
+    password : "####",
     database:"general_purpose",
     port:3306
 }
